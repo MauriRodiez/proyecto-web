@@ -1,0 +1,451 @@
+/* Generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    top: 0;
+    height: 120px;
+    position: sticky;
+    z-index: 1;
+    background-color: #f4f9ed;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    padding: 30px 50px;
+}
+
+.main-nav {
+    float: right;
+    height: 60px;
+    list-style-type: none;
+}
+
+.main-nav li {
+    float: left;
+    padding: 0 25px;
+    text-transform: uppercase;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #023d21;
+}
+
+.main-nav li a:hover {
+    text-decoration: none;
+    color: #f89f32;
+}
+
+/* Slide */
+
+.slide {
+    background-color: #f4f9ed;
+    height: 700px;
+    width: 100%;
+}
+
+.img-slide {
+    float: right;margin-top: -7%;
+    padding-right: 15%;
+}
+
+.title-slide {
+    font-size: 2.5rem;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    padding: 196px 0 0 0;
+    color: #04607f;
+}
+
+.txt-slide {
+    font-size: 1.2rem;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    width: 35%;
+    color: #333;
+}
+
+.btn-slide{
+    border-radius: 10px;
+    margin-left: 20%;
+    padding: 10px 20px;
+    background-color: #82b543;
+    border-color: #cbe5ac;
+    cursor: pointer;
+}
+
+.btn-slide:hover{
+    background-color: #f16136;
+    border-color: #fbcec1;
+}
+
+/* Section Categories */
+
+.category{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.category h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #f16136;
+}
+
+.cat {    
+    background-color: #e6f7fd;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: table-cell;
+    float: left;
+    margin: 5% 5%;    
+    padding: 50px 25px;
+    vertical-align: middle;
+    text-align: center;    
+    width: 15%;    
+}
+.cats {    
+    background-color: #fef5eb;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: table-cell;
+    float: left;
+    margin: 5% 5%;    
+    padding: 50px 25px;
+    vertical-align: middle;
+    text-align: center;    
+    width: 15%;    
+}
+
+.cat a{
+    text-decoration: none;
+}
+
+.cats a{
+    text-decoration: none;
+}
+
+.img-cat{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 25%;
+}
+
+.txt-cat{
+    text-transform: uppercase;
+    color: #f16136;
+}
+
+.txt-cats{
+    text-transform: uppercase;
+    color: #08afe6;
+}
+
+/* Section Promociones*/
+
+.promo{
+    margin: 15% 0;
+    padding: 10% 0;
+    width: 100%;
+}
+
+.promo h2{
+    font-size: 2rem;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #f16136;
+}
+
+.card-promo{
+    border: solid #ccc 1px;
+    border-radius: 15px;
+    float: left;
+    margin: 0 4.165%;
+    width: 25%;
+}
+
+.card-promo img{
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+.card-promo h3{
+    padding: 5% 0;
+    text-align: center;
+    color: #82b543;
+}
+
+.card-promo p{
+    padding: 0  5% 8%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: dimgray;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: aquamarine;
+    height: 180px;
+    margin-top: 40%;
+    padding: 5%;
+    width: 100%;
+}
+
+.pages{
+    background-color: aquamarine;
+    height: 180px;
+    margin-top: 1%;
+    padding: 5%;
+    width: 100%;
+}
+
+.copy{
+    text-align: center;
+}
+
+.redes{
+    list-style-type: none;
+    float: right;
+    margin-top: -1%;
+    width: 20%;
+}
+
+.redes li{
+    float: left;
+    margin: 0 5%;
+    width: 25px;
+}
+
+.redes li img{
+    width: 100%;
+}
+
+/* Quienes Somos */
+
+.who{
+    padding: 15% 0;
+}
+
+.who h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #f16136;
+}
+
+.who article{
+    margin: 10% 0;
+    padding: 0 10%;
+    width: 100%;
+}
+
+.img-left{
+    width: 50%;
+    border: 1px solid dimgray;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.txt-right{
+    float: left;
+    padding: 0 5%;
+    width: 50%;
+    font-size: 1.2rem;
+    color: dimgray;
+    line-height: 1.25rem;
+}
+
+.txt-left{
+    float: right;
+    margin-top: 10%;
+    padding: 0 5%;
+    width: 50%;
+    font-size: 1.2rem;
+    color: dimgray;
+    line-height: 1.25rem;
+}
+
+.img-right{
+    margin-top: 2%;
+    width: 50%;
+    border: 1px solid dimgray;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* Servicios */
+
+.services{
+    padding: 15% 0;
+}
+
+.services h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #f16136;
+}
+
+.row{
+    display: inline-block;
+    margin: 2.5% 0;
+    width: 100%;
+}
+
+.services article{
+    margin: 0 25%;
+    width: 65%;
+}
+
+.box-container{
+    margin: 5% 0;
+}
+
+.box{
+    width: 30%; 
+    box-sizing: border-box;
+    margin: 10px 50px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    float: left; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.box img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.box p {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 1em;
+    text-align: left;
+    font-size: 1.2rem;
+    color: dimgray;
+    line-height: 1.25rem;
+}
+
+/* Producto */
+
+.products{
+    padding: 15% 0;
+}
+
+.products h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #f16136;
+}
+
+.products article{
+    margin: 0 10%;
+    width: 80%;
+}
+
+.box-p{
+    width: 20%; 
+    box-sizing: border-box;
+    margin: 10px 30px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    float: left; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.box-p img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.box-p p {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 1em;
+    text-align: left;
+    font-size: 1.2rem;
+    color: dimgray;
+    line-height: 1.25rem;
+}
+
+/* Contacto */
+
+.contact{
+    padding: 15% 20%;
+}
+
+.contact h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #f16136;
+}
+
+form{
+    margin-top: 50px;
+    padding: 10%;
+}
+
+fieldset{
+    border: #ccc solid 1px;
+    margin: 20px 0;
+    padding: 2%;
+}
+
+label, input, select, textarea{
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    color: dimgray;
+    line-height: 1.25rem;
+}
+
+.radio-group {
+    text-align: center;
+}
+
+.radio-group input[type="radio"],
+.radio-group label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.radio-group label {
+    margin-left: 5px;
+}
+
+button[type="submit"]{
+    padding: 10px 30px;
+    background-color: #82b543;
+    border-color: #cbe5ac;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: #f16136;
+    border-color: #fbcec1;
+}
