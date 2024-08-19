@@ -3,113 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/fontawesome.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/fonts/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="../js/bootstrap.bundle.js"></script>
     <title>:. Veterinaria Villa Dolores .:</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <img src="../img/logotipo.png" alt="Logotipo veterinaria Villa dolores">
-            <ul class="main-nav">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="somos.html">Quienes Somos</a>
-                </li>
-                <li>
-                    <a href="servicio.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm px-5">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logotipo.png" alt="Logotipo veterinaria Villa dolores">
+            </a>
     
-    <main>       
-        <section class="products">
-            <h1>Productos</h1>
-            <div class="row">
-                <article>
-                    <div class="box-p">
-                        <img src="../img/producto2.jpg" alt="">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box-p">
-                        <img src="../img/producto2.jpg" alt="">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box-p">
-                        <img src="../img/producto2.jpg" alt="">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box-p">
-                        <img src="../img/producto2.jpg" alt="">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </article>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto main-nav">
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link active fw-lighter" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="servicio.html">Servicios</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div class="row">
-                <article>
-                    <div class="box-p">
-                        <img src="../img/producto2.jpg" alt="">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box-p">
-                        <img src="../img/producto2.jpg" alt="">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box-p">
-                        <img src="../img/producto2.jpg" alt="">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="box-p">
-                        <img src="../img/producto2.jpg" alt="">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </article>
+        </div>
+    </nav>
+    
+    <main class="back-pro">       
+        <section class="products container-fluid">
+            <h1 class="fs-1">Productos</h1>
+            
+            <div class="d-flex flex-column gap-3">
+                <div class="row d-flex justify-content-evenly p-5 gap-3">
+                    <article class="box w-25 border border-1 rounded shadow p-3">
+                        <div>
+                            <img class="img-fluid" src="../img/producto2.jpg" alt="Imagen 1">
+                            <h3 class="fs-3 p-2">Producto x</h3>
+                            <p class="fs-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Nobis quae odit, natus quisquam est odio accusamus harum
+                            </p>
+                            <button class="btn btn-lg btn-slide">
+                                Comprar
+                            </button>
+                        </div>
+                    </article>
+                    <article class="box w-25 border border-1 rounded shadow p-3">
+                        <div>
+                            <img class="img-fluid" src="../img/producto2.jpg" alt="Imagen 1">
+                            <h3 class="fs-3 p-2">Producto x</h3>
+                            <p class="fs-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Nobis quae odit, natus quisquam est odio accusamus harum
+                            </p>
+                            <button class="btn btn-lg btn-slide">
+                                Comprar
+                            </button>
+                        </div>
+                    </article>
+                    </article>
+                    <article class="box w-25 border border-1 rounded shadow p-3">
+                        <div>
+                            <img class="img-fluid" src="../img/producto2.jpg" alt="Imagen 1">
+                            <h3 class="fs-3 p-2">Producto x</h3>
+                            <p class="fs-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Nobis quae odit, natus quisquam est odio accusamus harum
+                            </p>
+                            <button class="btn btn-lg btn-slide">
+                                Comprar
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <div class="row d-flex justify-content-evenly p-5 gap-3">
+                    <article class="box w-25 border border-1 rounded shadow p-3">
+                        <div>
+                            <img class="img-fluid" src="../img/producto2.jpg" alt="Imagen 1">
+                            <h3 class="fs-3 p-2">Producto x</h3>
+                            <p class="fs-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Nobis quae odit, natus quisquam est odio accusamus harum
+                            </p>
+                            <button class="btn btn-lg btn-slide">
+                                Comprar
+                            </button>
+                        </div>
+                    </article>
+                    <article class="box w-25 border border-1 rounded shadow p-3">
+                        <div>
+                            <img class="img-fluid" src="../img/producto2.jpg" alt="Imagen 1">
+                            <h3 class="fs-3 p-2">Producto x</h3>
+                            <p class="fs-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Nobis quae odit, natus quisquam est odio accusamus harum
+                            </p>
+                            <button class="btn btn-lg btn-slide">
+                                Comprar
+                            </button>
+                        </div>
+                    </article>
+                    <article class="box w-25 border border-1 rounded shadow p-3">
+                        <div>
+                            <img class="img-fluid" src="../img/producto2.jpg" alt="Imagen 1">
+                            <h3 class="fs-3 p-2">Producto x</h3>
+                            <p class="fs-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Nobis quae odit, natus quisquam est odio accusamus harum
+                            </p>
+                            <button class="btn btn-lg btn-slide">
+                                Comprar
+                            </button>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="pages">
+    <footer class="mt-auto d-flex justify-content-between flex-sm-wrap">
         <p class="copy">Copyright &copy; 2024 - Veterinaria Villa Dolores</p>
-        <ul class="redes">
+        <ul class="redes d-flex gap-3">
             <li>
                 <a href="">
-                    <img src="../img/whatsapp.png" alt="">
+                    <i class="fa-brands fa-whatsapp fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="../img/instagram.png" alt="">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="../img/facebook.png" alt="">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="../img/youtube.png" alt="">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
                 </a>
             </li>
         </ul>

@@ -1,115 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/fontawesome.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/fonts/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="../js/bootstrap.bundle.js"></script>
     <title>:. Veterinaria Villa Dolores .:</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <img src="../img/logotipo.png" alt="Logotipo veterinaria Villa dolores">
-            <ul class="main-nav">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="somos.html">Quienes Somos</a>
-                </li>
-                <li>
-                    <a href="servicio.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>        
-        <section class="contact">
-            <h1>Contacto</h1>
-            <form action="">
-                <fieldset>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm px-5">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logotipo.png" alt="Logotipo veterinaria Villa dolores">
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto main-nav">
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link active fw-lighter" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="servicio.html">Servicios</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="back-con">
+        <section class="contact container">
+            <h1 class="fs-1">Contacto</h1>
+            <form action="" class="form-control d-flex flex-column p-3">
+                <fieldset class="form-control p-3 mb-5">
                     <legend>Información Personal</legend>
-        
-                    <div>
-                        <label for="name">Nombre:</label>
-                        <input type="text" name="name" required>
+
+                    <div class="p-3">
+                        <label class="form-label" for="name">Nombre:</label>
+                        <input class="form-control" type="text" name="name" required>
                     </div>
-        
-                    <div>
-                        <label for="pet">Nombre de la mascota:</label>
-                        <input type="text" name="pet" required>
+
+                    <div class="p-3">
+                        <label class="form-label" for="pet">Nombre de la mascota:</label>
+                        <input class="form-control" type="text" name="pet" required>
                     </div>
-        
-                    <div>
-                        <label for="type">Tipo de mascota:</label>
-                        <select name="type">
-                            <option value="">Elegir un tipo</option>
-                            <option value="">Perro</option>
-                            <option value="">Gato</option>
-                            <option value="">Exótico</option>
+
+                    <div class="p-3">
+                        <label class="form-label" for="type">Tipo de mascota:</label>
+                        <select class="form-control" name="type" aria-label="Large select example">
+                            <option selected>Elegir un tipo</option>
+                            <option value="1">Perro</option>
+                            <option value="2">Gato</option>
+                            <option value="3">Exótico</option>
                         </select>
                     </div>
-                    <div class="radio-group">
-                        <input type="radio" name="socio" value="Socio" required>
-                        <label for="socio">Socio</label>
-                        <input type="radio" name="Nosocio" value="NoSocio" required>
-                        <label for="socio">No Socio</label>
+                    <div class="p-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="socio" value="Socio" required>
+                        <label class="form-check-label" for="socio">Socio</label>                        
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Nosocio" value="NoSocio" required>
+                        <label class="form-check-label" for="socio">No Socio</label>
+                    </div>
+                </div>  
                 </fieldset>
-        
-                <fieldset>
+
+                <fieldset class="form-control p-3 mb-5">
                     <legend>Mensaje</legend>
-        
+
                     <div>
-                        <label for="mensaje">Motivo de consulta:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        <label class="form-label" for="mensaje">Motivo de consulta:</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
                     </div>
                 </fieldset>
-        
+
                 <div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="btn btn-lg btn-slide">Enviar</button>
                 </div>
             </form>
         </section>
     </main>
 
-    <footer class="pages">
+    <footer class="mt-auto d-flex justify-content-between flex-sm-wrap">
         <p class="copy">Copyright &copy; 2024 - Veterinaria Villa Dolores</p>
-        <ul class="redes">
+        <ul class="redes d-flex gap-3">
             <li>
                 <a href="">
-                    <img src="../img/whatsapp.png" alt="">
+                    <i class="fa-brands fa-whatsapp fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="../img/instagram.png" alt="">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="../img/facebook.png" alt="">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="../img/youtube.png" alt="">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
                 </a>
             </li>
         </ul>
     </footer>
 
 </body>
+
 </html>

@@ -4,97 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/fontawesome.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/fonts/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="../js/bootstrap.bundle.js"></script>
     <title>:. Veterinaria Villa Dolores .:</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <img src="../img/logotipo.png" alt="Logotipo veterinaria Villa dolores">
-            <ul class="main-nav">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="somos.html">Quienes Somos</a>
-                </li>
-                <li>
-                    <a href="servicio.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm px-5">
+        <div class="container-fluid">
 
-    <main>
-        <section class="who">
-            <h1>Quienes Somos</h1>
-            <article>
-                <img class="img-left" src="../img/vet.jpg" alt="">
-                <p class="txt-right">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logotipo.png" alt="Logotipo veterinaria Villa dolores">
+            </a>
+    
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto main-nav">
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link active fw-lighter" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="servicio.html">Servicios</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="back">
+        <img class="img-fluid w-100" src="../img/vet.jpg" alt="">
+        <section class="who d-flex flex-column">
+            <h1 class="fs-1">Quienes Somos</h1>
+            <article class="d-flex flex-column px-4 gap-4 py-5">                
+                <p class="txt-who fs-5 px-5">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quae odit, natus quisquam est odio
                     accusamus harum quia ex explicabo numquam facere velit! Quidem placeat doloribus dicta, obcaecati
                     aspernatur dolore.
-                    <br><br>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quae odit, natus quisquam est odio
                     accusamus harum quia ex explicabo numquam facere velit! Quidem placeat doloribus dicta, obcaecati
                     aspernatur dolore.
-                    <br><br>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quae odit, natus quisquam est odio
                     accusamus harum quia ex explicabo numquam facere velit! Quidem placeat doloribus dicta, obcaecati
                     aspernatur dolore.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quae odit, natus quisquam est odio
                     accusamus harum quia ex explicabo numquam facere velit! Quidem placeat doloribus dicta, obcaecati
                     aspernatur dolore.
                 </p>
-                <img class="img-right" src="../img/producto4.jpg" alt="">
-                <p class="txt-left">
+                <hr>       
+                <div class="d-flex justify-content-evenly flex-wrap gap-5">
+                    <img class="img-fluid img-thumbnail rounded w-25" src="../img/vet1.jpg" alt="">
+                    <img class="img-fluid img-thumbnail rounded w-25" src="../img/vet2.png" alt="">
+                    <img class="img-fluid img-thumbnail rounded w-25" src="../img/vet3.jpg" alt="">
+                </div>
+                <hr>
+                <p class="txt-who fs-5 px-5">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quae odit, natus quisquam est odio
-                    accusamus harum quia ex explicabo numquam facere velit! Quidem placeat doloribus dicta, obcaecati
-                    aspernatur dolore.<br><br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quae odit, natus quisquam est odio
-                    accusamus harum quia ex explicabo numquam facere velit! Quidem placeat doloribus dicta, obcaecati
-                    aspernatur dolore.<br><br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quae odit, natus quisquam est odio
-                    accusamus harum quia ex explicabo numquam facere velit! Quidem placeat doloribus dicta, obcaecati
-                    aspernatur dolore.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quae odit, natus quisquam est odio
                     accusamus harum quia ex explicabo numquam facere velit! Quidem placeat doloribus dicta, obcaecati
                     aspernatur dolore.
-                </p>                
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quae odit, natus quisquam est odio
+                    accusamus harum quia ex explicabo numquam facere velit! Quidem placeat doloribus dicta, obcaecati
+                    aspernatur dolore.
+                </p>               
             </article>
         </section>
     </main>
 
-    <footer class="pages">
+    <footer class="mt-auto d-flex justify-content-between flex-sm-wrap">
         <p class="copy">Copyright &copy; 2024 - Veterinaria Villa Dolores</p>
-        <ul class="redes">
+        <ul class="redes d-flex gap-3">
             <li>
                 <a href="">
-                    <img src="../img/whatsapp.png" alt="">
+                    <i class="fa-brands fa-whatsapp fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="../img/instagram.png" alt="">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="../img/facebook.png" alt="">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="../img/youtube.png" alt="">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
                 </a>
             </li>
         </ul>
