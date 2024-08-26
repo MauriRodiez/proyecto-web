@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto main-nav">
                     <li class="nav-item text-uppercase">
-                        <a class="nav-link active fw-lighter" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link fw-lighter" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item text-uppercase">
                         <a class="nav-link fw-lighter" href="somos.html">Quienes Somos</a>
@@ -38,10 +38,16 @@
                         <a class="nav-link fw-lighter" href="servicio.html">Servicios</a>
                     </li>
                     <li class="nav-item text-uppercase">
-                        <a class="nav-link fw-lighter" href="productos.html">Productos</a>
+                        <a class="nav-link fw-lighter" href="tienda.html">Tienda</a>
                     </li>
                     <li class="nav-item text-uppercase">
-                        <a class="nav-link fw-lighter" href="contacto.html">Contacto</a>
+                        <a class="nav-link active fw-lighter" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="#"><i class="fa fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item text-uppercase rounded-pill border border-success-subtle px-1">
+                        <a class="nav-link fw-lighter" href="#"><i class="fa-solid fa-user"></i></a>
                     </li>
                 </ul>
             </div>
@@ -102,8 +108,33 @@
         </section>
     </main>
 
-    <footer class="mt-auto d-flex justify-content-between flex-sm-wrap">
-        <p class="copy">Copyright &copy; 2024 - Veterinaria Villa Dolores</p>
+    <footer class="mt-auto d-flex justify-content-between flex-wrap">
+        <div class="d-flex flex-column justify-content-around">
+            <div class="mb-4">
+                <img class="logo-footer" src="../img/logotipo.png" alt="Logotipo veterinaria Villa dolores">
+            </div>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp; Av. Rivera 3142
+            </p>
+            <p>
+                <i class="fa-solid fa-phone"></i> &nbsp;&nbsp; 2622 8994
+            </p>
+            <p class="">Montevideo - Uruguay</p>
+            <p class="copy">Copyright &copy; 2024 - Veterinaria Villa Dolores</p>
+        </div>
+
+        <div class="border-start border-end border-light d-flex gap-3 p-5 w-25">
+            <form action="" class="w-100">
+                <fieldset class="d-flex flex-column">
+                    <label>Suscríbete a nuestro newsletter:</label>
+                    <div class="d-flex">
+                        <input type="email" class="form-control" placeholder="Ingresar correo electrónico">
+                        <button class="btn btn-new ms-auto">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        
         <ul class="redes d-flex gap-3">
             <li>
                 <a href="">

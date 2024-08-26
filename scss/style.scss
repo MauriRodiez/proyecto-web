@@ -1,0 +1,247 @@
+@import "colour";
+@import "mixins";
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.main-nav {
+    li {
+        a {
+            text-decoration: none;
+            color: $green-dark;
+
+            &.active {
+                color: $orange-dark !important;
+            }
+
+            @include underline-hover(5px);
+        }
+    }
+}
+
+/* Slide */
+.slide {
+    background-color: $green-light;
+    max-height: 700px;
+
+    .img-slide {
+        max-height: 700px;
+        max-width: 45%;
+    }
+
+    .title-slide {
+        color: $blue-dark;
+    }
+
+    .box-txt {
+        padding: 5%;
+    }
+
+    .txt-slide {
+        color: $dark-gray;
+    }
+
+    .btn-slide {
+        @include button-style($green-soft, $green-soft, $white, $green-light, $green-dark, $green-dark);
+    }
+}
+
+/* Buscador */
+
+.search{
+    height: 300px;
+    max-height: 350px;
+    p{
+        color: $white;
+    }
+    .btn-slide {
+        @include button-style($green-soft, $green-soft, $white, $orange-soft, $green-light, $white);
+    }
+}
+
+/* Section Categories */
+.featured {
+    margin: 5% 0;
+
+    h2 {
+        @include underlined-title($blue-dark);
+    }
+
+    .btn-feat {        
+        border-radius: 20px;
+        max-width: 600px;
+        text-decoration: none;
+        width: 400px;
+
+        &:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .btn-buy {
+        @include button-style($blue-light, $blue-dark, $blue-dark, $blue-light, $blue-light, $white);
+    }
+}
+
+/* Section Promociones */
+.recomend {
+    @include recomend-card;
+}
+
+.btn-plus{
+    @include button-style($gray, $gray-soft, $white, $blue-soft, $blue-soft, $white)
+}
+
+/* Comments */
+
+.comments{
+
+    h2{
+        @include underlined-title($blue-dark); 
+    }    
+
+    .card-comments {
+        margin: 0 0 15%;
+        opacity: 0.5;
+        padding: 10px 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; 
+        width: 400px;
+    
+        img {
+            max-width: 120px;
+            width: 100px;
+        }
+    
+        h5 {
+            color: $green-soft;
+        }
+    
+        p {
+            color: $gray-soft;
+        }
+    
+        &:hover {
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            opacity: 1;
+            transform: scale(1.05);
+        }
+    } 
+    
+}
+/* Footer */
+footer {
+    background-color: $green-soft;
+    height: 380px;
+    margin-top: 40%;
+    padding: 5%;
+    width: 100%;
+
+    .logo-footer{
+        width: 100px;
+    }
+
+    .pages {
+        height: 180px;
+        margin-top: 1%;
+        padding: 5%;
+        width: 100%;
+    }
+
+    .btn-new{
+        @include button-style($orange-soft,$orange-soft, $dark-gray,$orange-dark, $orange-dark, $white);
+    }
+
+    .copy {
+        text-align: center;
+    }
+
+    .redes {
+        list-style-type: none;
+
+        li {
+            a {
+                color: $dark-gray;
+
+                &:hover {
+                    color: $orange-dark;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+/* Quienes Somos */
+.who{
+    margin: 2% 0;
+
+    .whois {
+        padding: 2% 0 5%;
+
+        h1 {
+            @include underlined-title($blue-dark);
+        }
+
+        .txt-who {
+            color: $dark-gray;
+        }
+
+        .btn-action{
+            @include button-style($green-dark, $green-dark, $white, $green-soft, $green-soft, $green-dark);
+        }
+
+        .backside{
+            background-color: $green-light;
+            padding: 10%;
+        }
+
+    }
+
+}
+
+/* Servicios */
+.back-ser {
+    margin: 5% 0;
+
+    h1 {
+        @include underlined-title($blue-dark);
+    }
+
+    .txt-services{
+        color: $dark-gray;
+        margin: 0 auto 5%;
+    }
+}
+
+/* Producto */
+.back-pro {
+
+    margin: 5% 0;
+
+    h1 {
+        @include underlined-title($blue-dark);
+    }
+
+    .txt-products{
+        color: $dark-gray;
+        margin: 0 auto 5%;
+    }
+
+}
+
+
+/* Contacto */
+.back-con {
+    background-color: $green-light;
+}
+
+.contact {
+    @include section-padding(5% 0 20%, $green-light);
+}
