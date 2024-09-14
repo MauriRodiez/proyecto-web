@@ -1,0 +1,31 @@
+
+# Habilita la reescritura de URLs
+RewriteEngine On
+
+# Redirige la URL sin 'www' a la versión con 'www' (opcional)
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Redirige la versión sin 'https' a la versión con 'https' (opcional)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Define el archivo de índice por defecto
+DirectoryIndex index.html 
+
+# Redirige las URLs amigables (opcional, asegúrate de que tu servidor soporta estas reglas)
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1 [L,QSA]
+
+# Configura la página 404 personalizada
+ErrorDocument 404 /404.html
+
+# Configura la caché de recursos estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 day"
+    ExpiresByType image/jpeg "access plus 1 week"
+    ExpiresByType image/png "access plus 1 week"
+    ExpiresByType image/gif "access plus 1 week"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

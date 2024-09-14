@@ -7,6 +7,10 @@
     text-underline-offset: 5px;
 }
 
+@mixin text-center {
+    text-align: center;
+}
+
 // Button
 @mixin button-style(
     $bg-color, $border-color, $text-color, $hover-bg, $hover-border, $hover-text
